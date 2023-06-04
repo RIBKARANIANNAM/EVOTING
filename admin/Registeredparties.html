@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registered Person Information</title>
+  <link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="home-btns">
+    <a class="btn btn1" href="CreateElection.html"> Create an Election</a>
+      <a class="btn btn2" href="Registeredparties.html">Registration Person Information</a>
+      <a class="btn btn3" href="ViewResult.html"> View Result </a>
+  </div>
+  
+  <div class="content-center" style="margin-top:70px">  
+  <h1>Registered Person Information</h1>
+  <form class="box">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="enter firstName" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="enter lastName" required>
+    </div>
+    <div class="form-group">
+      <label for="information">Information:</label>
+      <textarea id="information" name="information" rows="4" placeholder="provide information" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="rules">Rules:</label>
+      <textarea id="rules" name="rules" rows="4" placeholder="provide rules" required></textarea>
+    </div>
+    <button class="btn btn2 m-10" type="submit">Submit</button>
+    <br>
+    <button class="btn btn3" onclick="goBack()">Go Back</button>
+  </form>
+
+</div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title >Create Election</title>
+  <link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="home-btns">
+    <a class="btn btn1" href="CreateElection.html"> Create an Election</a>
+      <a class="btn btn2" href="Registeredparties.html">Registration Person Information</a>
+      <a class="btn btn3" href="ViewResult.html"> View Result </a>
+  </div>
+
+  <div class="content-center" style="margin-top:70px">  
+  <h1>Create Election</h1>
+  <div class="box">
+    <div class="form-group">
+      <label for="electionTitle">Election Title:</label>
+      <input type="text" id="electionTitle" name="electionTitle" placeholder="enter election title" required>
+    </div>
+    <div class="form-group">
+      <label for="candidateName">Candidate Name:</label>
+      <input type="text" id="candidateName" name="candidateName" placeholder="enter full name" required>
+    </div>
+           <div class="form-group">
+      <label for="candidateImage">Candidate Image:</label>
+      <input type="file" id="candidateImage" name="candidateImage" accept="image/*" required>
+    </div>
+            
+    <div class="form-group">
+      <label for="electionDate">Election Date:</label>
+      <input type="date" id="electionDate" name="electionDate" required>
+    </div>
+    <input type="button"  class="btn btn2 m-10" onclick="submit()" value="Create Election">
+
+    <br>
+    <button class="btn btn3" onclick="goBack()">Go Back</button>
+  </div>
+
+</div>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+    function submit(){
+      alert('election got created!');
+      window.location = "adminPage.html";
+    }
+  </script>
+</body>
+</html>
